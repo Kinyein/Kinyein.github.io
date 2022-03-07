@@ -24,7 +24,7 @@
 // Backgrounds
 @LightGrayMainBackground: hsl(0, 0%, 90%);
 @GrayishRedToggleBackgroundKeypadBackground: hsl(0, 5%, 81%);
-@VeryLightGrayScreenVackground: hsl(0, 0%, 93%);
+@VeryLightGrayScreenBackground: hsl(0, 0%, 93%);
 
 // Keys
 @DarkModerateCyanKeyBackground: hsl(185, 42%, 37%);
@@ -62,3 +62,268 @@
 @LightYellow: hsl(52, 100%, 62%);
 @VeryDarkBlue: hsl(198, 20%, 13%);
 @WhiteText: hsl(0, 0, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Spartan", sans-serif;
+}
+
+//       TEMAS 
+
+//    TEMA 1
+
+.theme1 {
+
+    background-color: @darkDesaturatedBluemainBackground;
+    color: @WhiteText;
+
+    .bGCircle {
+        background-color: @darkDesaturatedBluetoggleBackground;
+        justify-content: flex-start;
+    }
+
+    .selectOption p a {
+        color: white;
+    }
+
+    .circle {
+        background-color: @RedkeyBackgroundToggle;
+    }
+    .calculadora{
+
+        .pantalla {
+            background-color: @darkDesaturatedBluescreenBackground;
+        }
+        .buttons{
+            background-color: @darkDesaturatedBluetoggleBackground;
+        }
+        button{
+            color: @darkDesaturatedBluescreenBackground;
+            background-color: @LightGrayishOrangeKeyBackground;
+            box-shadow: inset 0px -4px 0px @GrayishOrangeKeyShadow;
+        }
+        .del, .reset{
+            color: #fff;
+            background-color: @desaturatedDarkBluekeyBackground;
+            box-shadow: inset 0px -4px 0px @desaturatedDarkBluekeyShadow;
+        }
+        .equal{
+            color: #fff;
+            background-color: @RedkeyBackgroundToggle;
+            box-shadow: inset 0px -4px 0px @DarkRedKeyShadow;
+        }
+    }
+    
+}
+
+//    TEMA 2
+
+.theme2 {
+
+    background-color: @LightGrayMainBackground;
+    color: #000;
+
+    .bGCircle {
+        background-color: @GrayishRedToggleBackgroundKeypadBackground;
+        justify-content: center;
+    }
+
+    .selectOption p a {
+        color: #000;
+    }
+
+    .circle {
+        background-color: @OrangeKeyBackgroundToggle;
+    }
+    .calculadora{
+
+        .pantalla {
+            background-color: @VeryLightGrayScreenBackground;
+        }
+        .buttons{
+            background-color: @GrayishRedToggleBackgroundKeypadBackground;
+        }
+        button{
+            color: @darkDesaturatedBluescreenBackground;
+            background-color: @LightGrayishYellowKeyBackground;
+            box-shadow: inset 0px -4px 0px @GrayishOrangeKeyShadow;
+        }
+        .del, .reset{
+            color: #fff;
+            background-color: @DarkModerateCyanKeyBackground;
+            box-shadow: inset 0px -4px 0px @VeryDarkCyanKeyShadow;
+        }
+        .equal{
+            color: #fff;
+            background-color: @OrangeKeyBackgroundToggle;
+            box-shadow: inset 0px -4px 0px @DarkOrangeOeyShadow;
+        }
+    }
+    
+}
+
+//    TEMA 3
+
+.theme3 {
+
+    background-color: @VeryDarkVioletMainBackground;
+    color: @LightYellow;
+
+    .bGCircle {
+        background-color: @VeryDarkVioletToggleBackgroundKeypadBackgroundScreenBackground;
+        justify-content: flex-end;
+    }
+
+    .selectOption p a {
+        color:@LightYellow;
+    }
+
+    .circle {
+        background-color: @PureCyanKeyBackgroundToggle;
+    }
+    .calculadora{
+
+        .pantalla {
+            background-color: @VeryDarkVioletToggleBackgroundKeypadBackgroundScreenBackground;
+        }
+        .buttons{
+            background-color: @VeryDarkVioletToggleBackgroundKeypadBackgroundScreenBackground;
+        }
+        button{
+            color: @LightYellow;
+            background-color: @VeryDarkVioletKeyBackground;
+            box-shadow: inset 0px -4px 0px @DarkMagentaKeyShadow;
+        }
+        .del, .reset{
+            color: #fff;
+            background-color: @DarkVioletKeyBackground;
+            box-shadow: inset 0px -4px 0px @VividMagentaKeyShadow;
+        }
+        .equal{
+            color: #000;
+            background-color: @PureCyanKeyBackgroundToggle;
+            box-shadow: inset 0px -4px 0px @SoftCyanKeyShadow;
+        }
+    }
+    
+}
+
+//      FIN TEMAS
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 80px 25px 10px 25px;
+
+    .main {
+        width: 450px;
+    }
+
+    .calculadora {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 150px auto;
+        max-width: 500px;
+
+        .pantalla {
+            grid-column: span 4;
+            border-radius: 8px;
+            margin: 25px 0 20px 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            h1{
+                font-size: 35px;
+                margin-right: 30px;
+            }
+        }
+
+        .buttons {
+            grid-column: span 4;
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(4, auto);
+            padding: 15px;
+            border-radius: 8px;
+
+            button{
+                cursor: pointer;
+                grid-column: span 1;
+                height: 50px;
+                margin: 10px;
+                font-size: 25px;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .del, .reset{
+                font-size: 16px;
+            }
+
+            .reset, .equal {
+                grid-column: span 2;
+            }
+
+        }
+    }
+
+    .header {
+        grid-column: span 4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .themeSelector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            h3 {
+                font-size: 12px;
+            }
+
+            .selectOption {
+                display: flex;
+                justify-content: space-between;
+                width: 50px;
+                flex-wrap: wrap;
+
+                p {
+                    font-size: 11px;
+                    margin: 4px 5px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                .bGCircle {
+                    display: flex;
+                    align-items: center;
+                    height: 20px;
+                    width: 98%;
+                    border-radius: 10px;
+
+                    .circle {
+                        margin: 0 3px;
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .theme2()
+}
+
+// @media screen and (max-width: 768px) {
+//     body {
+//         margin: 50px;
+//     }
+// }
