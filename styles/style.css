@@ -28,16 +28,26 @@
   background-color: hsl(30, 25%, 89%);
   box-shadow: inset 0px -4px 0px hsl(28, 16%, 65%);
 }
+.theme1 .calculadora button:active {
+  background-color: hsl(28, 16%, 65%);
+}
 .theme1 .calculadora .del,
 .theme1 .calculadora .reset {
   color: #fff;
   background-color: hsl(225, 21%, 49%);
   box-shadow: inset 0px -4px 0px hsl(224, 28%, 35%);
 }
+.theme1 .calculadora .del:active,
+.theme1 .calculadora .reset:active {
+  background-color: hsl(224, 28%, 35%);
+}
 .theme1 .calculadora .equal {
   color: #fff;
   background-color: hsl(6, 63%, 50%);
   box-shadow: inset 0px -4px 0px hsl(6, 70%, 34%);
+}
+.theme1 .calculadora .equal:active {
+  background-color: hsl(6, 70%, 34%);
 }
 .theme2 {
   background-color: hsl(0, 0%, 90%);
@@ -62,7 +72,10 @@
 .theme2 .calculadora button {
   color: hsl(224, 36%, 15%);
   background-color: hsl(45, 7%, 89%);
-  box-shadow: inset 0px -4px 0px hsl(28, 16%, 65%);
+  box-shadow: inset 0px -4px 0px hsl(35, 11%, 61%);
+}
+.theme2 .calculadora button:active {
+  background-color: hsl(35, 11%, 61%);
 }
 .theme2 .calculadora .del,
 .theme2 .calculadora .reset {
@@ -70,10 +83,17 @@
   background-color: hsl(185, 42%, 37%);
   box-shadow: inset 0px -4px 0px hsl(185, 58%, 25%);
 }
+.theme2 .calculadora .del:active,
+.theme2 .calculadora .reset:active {
+  background-color: hsl(185, 58%, 25%);
+}
 .theme2 .calculadora .equal {
   color: #fff;
   background-color: hsl(25, 98%, 40%);
   box-shadow: inset 0px -4px 0px hsl(25, 99%, 27%);
+}
+.theme2 .calculadora .equal:active {
+  background-color: hsl(25, 99%, 27%);
 }
 .theme3 {
   background-color: hsl(268, 75%, 9%);
@@ -100,16 +120,26 @@
   background-color: hsl(268, 47%, 21%);
   box-shadow: inset 0px -4px 0px hsl(290, 70%, 36%);
 }
+.theme3 .calculadora button:active {
+  background-color: hsl(290, 70%, 36%);
+}
 .theme3 .calculadora .del,
 .theme3 .calculadora .reset {
   color: #fff;
   background-color: hsl(281, 89%, 26%);
   box-shadow: inset 0px -4px 0px hsl(285, 91%, 52%);
 }
+.theme3 .calculadora .del:active,
+.theme3 .calculadora .reset:active {
+  background-color: hsl(285, 91%, 52%);
+}
 .theme3 .calculadora .equal {
   color: #000;
   background-color: hsl(176, 100%, 44%);
   box-shadow: inset 0px -4px 0px hsl(177, 92%, 70%);
+}
+.theme3 .calculadora .equal:active {
+  background-color: hsl(177, 92%, 70%);
 }
 body {
   display: flex;
@@ -226,16 +256,26 @@ body .calculadora button {
   background-color: hsl(30, 25%, 89%);
   box-shadow: inset 0px -4px 0px hsl(28, 16%, 65%);
 }
+body .calculadora button:active {
+  background-color: hsl(28, 16%, 65%);
+}
 body .calculadora .del,
 body .calculadora .reset {
   color: #fff;
   background-color: hsl(225, 21%, 49%);
   box-shadow: inset 0px -4px 0px hsl(224, 28%, 35%);
 }
+body .calculadora .del:active,
+body .calculadora .reset:active {
+  background-color: hsl(224, 28%, 35%);
+}
 body .calculadora .equal {
   color: #fff;
   background-color: hsl(6, 63%, 50%);
   box-shadow: inset 0px -4px 0px hsl(6, 70%, 34%);
+}
+body .calculadora .equal:active {
+  background-color: hsl(6, 70%, 34%);
 }
 body .attribution {
   position: absolute;
