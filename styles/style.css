@@ -113,11 +113,10 @@
 }
 body {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   margin: 80px 25px 10px 25px;
-  background-color: hsl(0, 0%, 90%);
-  color: #000;
+  background-color: hsl(222, 26%, 31%);
+  color: hsl(0, 0%, 100%);
 }
 body .main {
   width: 450px;
@@ -207,34 +206,38 @@ body .header .themeSelector .selectOption .bGCircle .circle {
   border-radius: 100%;
 }
 body .bGCircle {
-  background-color: hsl(0, 5%, 81%);
-  justify-content: center;
+  background-color: hsl(223, 31%, 20%);
+  justify-content: flex-start;
 }
 body .selectOption p a {
-  color: #000;
+  color: white;
 }
 body .circle {
-  background-color: hsl(25, 98%, 40%);
+  background-color: hsl(6, 63%, 50%);
 }
 body .calculadora .pantalla {
-  background-color: hsl(0, 0%, 93%);
+  background-color: hsl(224, 36%, 15%);
 }
 body .calculadora .buttons {
-  background-color: hsl(0, 5%, 81%);
+  background-color: hsl(223, 31%, 20%);
 }
 body .calculadora button {
   color: hsl(224, 36%, 15%);
-  background-color: hsl(45, 7%, 89%);
+  background-color: hsl(30, 25%, 89%);
   box-shadow: inset 0px -4px 0px hsl(28, 16%, 65%);
 }
 body .calculadora .del,
 body .calculadora .reset {
   color: #fff;
-  background-color: hsl(185, 42%, 37%);
-  box-shadow: inset 0px -4px 0px hsl(185, 58%, 25%);
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: inset 0px -4px 0px hsl(224, 28%, 35%);
 }
 body .calculadora .equal {
   color: #fff;
-  background-color: hsl(25, 98%, 40%);
-  box-shadow: inset 0px -4px 0px hsl(25, 99%, 27%);
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: inset 0px -4px 0px hsl(6, 70%, 34%);
+}
+body .attribution {
+  position: absolute;
+  align-self: flex-end;
 }
