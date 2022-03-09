@@ -17,11 +17,14 @@
     <!-- Style -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Reto 2 | Calculator app</title>
+
+    <script src="/scripts/Calculadora.js" type="text/javascript"></script>
+    <script src="/scripts/Pantalla.js" type="text/javascript"></script>
+    <script src="/scripts/script.js" type="text/javascript" defer></script> <!-- defer hace que se cargue despues de todo el codigo html-->
 </head>
 
 <body>
 
-    
     <div class="main">
         <div class="calculadora">
             <div class="header">
@@ -29,9 +32,9 @@
                 <div class="themeSelector">
                     <h3 class="theme">THEME</h3>
                     <div class="selectOption">
-                        <p><a href="">1</a></p>
-                        <p><a href="">2</a></p>
-                        <p><a href="">3</a></p>
+                        <p id="theme1"><a href="">1</a></p>
+                        <p id="theme2"><a href="">2</a></p>
+                        <p id="theme3"><a href="">3</a></p>
                         <div class="bGCircle">
                             <div class="circle"></div>
                         </div>
@@ -39,37 +42,39 @@
                 </div>
             </div>
             
-            <div class="pantalla"><h1 class="result">2737321</h1></div>
+            <div class="pantalla">
+                <h1 class="valorAnterior"></h1>
+                <h1 class="valorActual"></h1>
+            </div>
+            
 
             <div class="buttons">
                 <button class="number">7</button>
                 <button class="number">8</button>
                 <button class="number">9</button>
-                <button class="del">DEL</button>
+                <button class="del" onclick="pantalla.borrar()">DEL</button>
                 <button class="number">4</button>
                 <button class="number">5</button>
                 <button class="number">6</button>
-                <button class="plus">+</button>
+                <button class="operator plus" value="sumar">+</button>
                 <button class="number">1</button>
                 <button class="number">2</button>
                 <button class="number">3</button>
-                <button class="minus">-</button>
-                <button class="dot">.</button>
+                <button class="operator minus" value="restar">-</button>
+                <button class="number">.</button>
                 <button class="number">0</button>
-                <button class="div">/</button>
-                <button class="for">x</button>
-                <button class="reset">RESET</button>
-                <button class="equal">=</button>
+                <button class="operator div" value="dividir">/</button>
+                <button class="operator for" value="multiplicar">x</button>
+                <button class="reset" onclick="pantalla.borrarTodo()">RESET</button>
+                <button class="operator equal" value="igual">=</button>
             </div>
-            
         </div> 
-        
-            
     </div>
 
     <!-- <div class="attribution">
         Coded by <a href="https://github.com/Kinyein" target="_blank">Kevin Torres</a>.
     </div> -->
+
 </body>
 
 </html>
