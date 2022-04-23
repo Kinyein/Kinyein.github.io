@@ -12,10 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const actualTheme = localStorage.getItem('ActualTheme')
     console.log(actualTheme)
 
-    // if(actualTheme === 'theme3'){
-    //     body.setAttribute('class', 'theme3')
-    // }
-
     switch (actualTheme) {
         case 'theme1':
             body.setAttribute('class', 'theme1')
